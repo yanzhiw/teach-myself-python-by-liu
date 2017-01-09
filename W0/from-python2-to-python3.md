@@ -1,19 +1,19 @@
-���������ҽ������¼��δ��룬չʾһ��python2 �� python3�����𡣵�Ȼ������չʾ�ģ�ֻ��һЩӰ��ܴ�ģ�������ÿ�춼������������ʵ���ϣ����кܶ��������ĳЩʱ��ٵ���ĺ�����ġ�
+接下来，我将用以下几段代码，展示一下python2 和 python3的区别。当然，我所展示的，只是一些影响很大的，基本上每天都会碰到的区别。实际上，还有很多区别会在某些时候毁掉你的好心情的。
 
-��������������ͨ���Ķ��ٷ��ĵ���������⣬��ô��Ȱ�㻹�����ˡ�����Ҳ������ȥ������ȥҲ�ǲ�ס����ʵ֤����ǰ�˵Ŀӣ����ܵò���ȥ�żǵ�ס�������ǣ��Ҿ����㣬6����ǰ���ҡ�����ζ�ţ��ҲȵĿӣ���Ҳ�òȡ�
+不过，如果你打算通过阅读官方文档来解决问题，那么我劝你还是算了。看了也看不下去，看下去也记不住。事实证明，前人的坑，你总得踩下去才记得住。别忘记，我就是你，6个月前的我。这意味着，我踩的坑，你也得踩。
 
 ## EX 3
-### ����
+### 代码
 ```
-print("��һ���ҵ�С����")
+print("数一下我的小鸡：")
 
-print("ĸ��", 25 + 30 / 6)
-print("����", 100 - 25 * 3 % 4)
+print("母鸡", 25 + 30 / 6)
+print("公鸡", 100 - 25 * 3 % 4)
 
-print("����������һ�¼�����")
+print("现在我来数一下鸡蛋：")
 print(3 + 2 + 1 - 5 + 4 % 2 - 1 // 4 + 6)
 
-print("3 + 2 < 5 - 7�����ǶԵ���")
+print("3 + 2 < 5 - 7，这是对的吗？")
 print(3 + 2 < 5 - 7)
 
 print("What is 3 + 2?", 3 + 2)
@@ -27,14 +27,14 @@ print("Is it greater or equal?", 5 >= -2)
 print("Is it less or equal?", 5 <= -2)
 ```
 
-### ���н��
+### 运行结果
 
-��һ���ҵ�С����
-ĸ�� 30.0
-���� 97
-����������һ�¼�����
+数一下我的小鸡：
+母鸡 30.0
+公鸡 97
+现在我来数一下鸡蛋：
 7
-3 + 2 < 5 - 7�����ǶԵ���
+3 + 2 < 5 - 7，这是对的吗？
 False
 What is 3 + 2? 5
 What is 5 - 7? -2
@@ -44,20 +44,20 @@ Is it greater? True
 Is it greater or equal? True
 Is it less or equal? False
 
-### ��Ҫ�����
+### 主要区别点
 
-|    ����    | python2   |  python3  |
+|    区别    | python2   |  python3  |
 | --------   | -----:  | :----:  |
-| print�﷨    | pirnt "" |   print()     |
-| ����        |   3/2 ��� 1  |   3/2��� 1.5   |
-| �Ƿ�֧��ԭ������       |    ��֧��   |  ֧��  |
+| print语法    | pirnt "" |   print()     |
+| 整除        |   3/2 输出 1  |   3/2输出 1.5   |
+| 是否支持原生中文       |    不支持   |  支持  |
 
-### ע������
-python3������Ҫʹ��//������/����python3���ʹ��/��Ϊ�������ᱨ������Ҫ����ע�⣬��ͷ���а�python2����ظ����޳���
-���Ⳣ����֧��ԭ�����ĵĹ��ܡ�
+### 注意事项
+python3整除需要使用//而不是/。在python3如果使用/作为整除不会报错，需要引起注意，从头脑中把python2的相关概念剔除。
+另外尝试了支持原生中文的功能。
 
 ## EX 4
-### ����
+### 代码
 ```
 cars = 100
 space_in_a_car = 4.0
@@ -77,7 +77,7 @@ print("We have", passengers, "to carpool today.")
 print("We need to put about", int(average_passengers_per_car), "in each car.")
 ```
 
-### ���н��
+### 运行结果
 There are 100 car available.
 There are only 30 drivers available.
 There will be 70 empty cars today.
@@ -85,16 +85,16 @@ We can transport 120.0 people today.
 We have 90 to carpool today.
 We need to put about 3 in each car.
 
-### ��Ҫ�����
-|    ����    | python2   |  python3  |
+### 主要区别点
+|    区别    | python2   |  python3  |
 | --------   | -----:  | :----:  |
-| print�﷨    | pirnt "" |   print()     |
+| print语法    | pirnt "" |   print()     |
 
-### ע������
-��������ע�⵽�ˣ�```average_passengers_per_car = passengers / cars_driven```��python���������һ������```3```������python3�������һ��������```3.0```,Ϊ��������������һ�£�������int���ת��һ�¸�ʽ��
+### 注意事项
+我在这里注意到了，```average_passengers_per_car = passengers / cars_driven```在python中输出的是一个整数```3```，而在python3中输出了一个浮点数```3.0```,为了让输出结果保持一致，我用了int语句转了一下格式。
 
 ## EX29
-### ����
+### 代码
 ```
 people = 20
 cats = 30
@@ -123,21 +123,21 @@ if people <= dogs:
 if people == dogs:
 	print("People are dogs.")
 ```
-### ���н��
+### 运行结果
 Too many cats! The world is doomed!
 The world is dry!
 People are greater than or equal to dogs.
 People are less than or equal to dogs.
 People are dogs.
-### ��Ҫ�����
-|    ����    | python2   |  python3  |
+### 主要区别点
+|    区别    | python2   |  python3  |
 | --------   | -----:  | :----:  |
-| print�﷨    | pirnt "" |   print()     |
-### ע������
-��һ�θ�д�ǱȽ����ɵģ���������˵ֻҪע��һ��==��=������Ϳ����ˡ���ʵ�����ǵ���Ȼ������=��û�и�ֵ�ĺ��壬����ڱ���к����׾Ͱ���Ȼ���Ե�˼ά�������ˣ�����δ���߬д��������Ҳ������������Ķ���Ľ��ˡ�
+| print语法    | pirnt "" |   print()     |
+### 注意事项
+这一段改写是比较轻松的，基本上来说只要注意一下==和=的区别就可以了。事实上我们的自然语言中=并没有赋值的含义，因此在编程中很容易就把自然语言的思维带进来了，在这段代表攥写过程中我也犯了这个错误，阅读后改进了。
 
 ## EX33
-### ����
+### 代码
 ```
 i = 0
 numbers =[]
@@ -156,7 +156,7 @@ print("The numbers:")
 for num in numbers:
 	print(num)
 ```
-### ���н��
+### 运行结果
 At the top i is 0
 Numbers now:  [0]
 At the bottom i is 1
@@ -182,15 +182,15 @@ The numbers:
 3
 4
 5
-### ��Ҫ�����
-|    ����    | python2   |  python3  |
+### 主要区别点
+|    区别    | python2   |  python3  |
 | --------   | -----:  | :----:  |
-| print�﷨    | pirnt "" |   print()     |
-### ע������
-�����ϰ����Ҫע�����while��������������ѭ����Ҫȷ������while������Ĳ�������ʽ���һ������false��������ܵĻ���������for�����С�
+| print语法    | pirnt "" |   print()     |
+### 注意事项
+这个练习的主要注意点是while函数很容易无限循环，要确保整个while语句最后的布尔表达式最后一定会变成false。如果可能的话，尽量用for来运行。
 
 ## EX35
-### ����
+### 代码
 ```
 from sys import exit
 
@@ -265,8 +265,8 @@ def start():
 start()
 ```
 
-### ���н��
-����һ��������Ϸ��������һ��֮�������� 
+### 运行结果
+这是一个文字游戏，我玩了一次之后结果如下 
 You are in a dark room.
 
 There is a door to you right or left.
@@ -287,13 +287,13 @@ I got no idea what that means.
 
 The bear looks at you then slaps your face off. Good job!
 
-### ��Ҫ����
-### ��Ҫ�����
-|    ����    | python2   |  python3  |
+### 主要区别
+### 主要区别点
+|    区别    | python2   |  python3  |
 | --------   | -----:  | :----:  |
-| print�﷨    | pirnt "" |   print()     |
-| ����   | raw_input |  input   |
+| print语法    | pirnt "" |   print()     |
+| 输入   | raw_input |  input   |
 
-### ע������
-���Ե�ʱ������bear_room����û���κ���ʾ�������뵽Ҫ����```take honey```����```open door```�Ⱥܳ�����÷��������Ķ����뷢����Ҫ���Ե��ڲ���Ч��Ҳ����˵������������ʻ������ͬ��˼�����ܾ���Զ�޷��⿪��������ˡ���Ҳ���Ķ�����֮���֪���ġ�
-��python2�� raw_input��input����ˣ����Һ㶨��Ϊ��������ַ�����
+### 注意事项
+测试的时候发现在bear_room由于没有任何提示，很难想到要输入```take honey```或者```open door```等很抽象的用法，而且阅读代码发现需要绝对等于才有效，也就是说如果我用其他词汇表达相同意思，可能就永远无法解开这个谜题了。我也是阅读代码之后才知道的。
+在python2中 raw_input被input替代了，而且恒定认为输出的是字符串。
