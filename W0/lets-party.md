@@ -1,4 +1,4 @@
-### 和世界说你好
+### Let's Party
 
 > 上帝说要有光，于是，就有了光。
 
@@ -9,9 +9,13 @@
 好了，我们已经安了python3了。当然，关于要用python3还是python2的文章很多，大概和豆浆要吃甜的还是咸的一样多。别管那些意识形态之争了，以下这些文章，你一篇都不需要看：
 
 • 10 awesome features of Python that you can’t use because you refuse to upgrade to Python 3
+
 • Everything you did not want to know about Unicode in Python 3
+
 • Python 3 is killing Python
+
 • Python 3 can revive Python
+
 • Python 3 is fine
 
 好了，我们确认你安了python3.6，接下来我们要安一个文笔编辑器，这回我们觉得听LPTHW的，安一个Notepad+。这是一个免费软件，而且我们不需要用它的内购。
