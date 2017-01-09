@@ -266,7 +266,7 @@ start()
 ```
 
 ### 运行结果
-这是一个文字游戏，我玩了一次之后结果如下
+这是一个文字游戏，我玩了一次之后结果如下 
 You are in a dark room.
 
 There is a door to you right or left.
