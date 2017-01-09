@@ -2,9 +2,7 @@
 "plugins": ["disqus"],
 “pluginsConfig”: {
 "disqus": {
- “shortName":” “teachpythonbyliuheyu
-
-”
+ “shortName":” “teachpythonbyliuheyu”
   }
 }
 }
