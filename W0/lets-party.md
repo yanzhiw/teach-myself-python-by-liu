@@ -1,4 +1,4 @@
-### Let's Party
+# Let's Party
 
 > 上帝说要有光，于是，就有了光。
 
