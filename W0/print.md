@@ -1,4 +1,4 @@
-## print的用法
+# print的用法
 
 大部分人第一次接触一门语言，都会写这么一行代码，以实现一个功能：输出“Hello World！”或者“hello world”。
 
